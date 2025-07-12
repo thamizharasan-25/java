@@ -1,5 +1,5 @@
 class A{
-    public A(){
+     A(){
         System.out.println("IN A");
     }
     public A(int n){
@@ -8,7 +8,7 @@ class A{
 }
 class B extends A{
 
- public B(){
+  B(){
                                     //super(); it is a method which execute the super class constructor first
         System.out.println("IN B"); //all constructor has super class implicitly
     }                               //when u call b() first execute the a() only
@@ -20,7 +20,8 @@ public class Thisandsuper {
     
     public static void main(String[] args) {
         
-    B obj=new B(2);
+    //B obj=new B(2);
+    new B(2);
     }
 }
 

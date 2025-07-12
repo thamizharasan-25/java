@@ -7,7 +7,7 @@ public class Exception2 {
         int arr[]=new int[5];
         System.out.println("half flow ");
         try {
-            //System.out.println(str.length()); // if a statement gets error then the try block will stop and the flow will move to catch so other lines in try doesnt work
+            System.out.println(str.length()); // if a statement gets error then the try block will stop and the flow will move to catch so other lines in try doesnt work
             j=j/i;
             System.out.println(arr[5]);
         } catch (ArithmeticException e) { //here ArithmeticException is a class which is subclass for the Exception 

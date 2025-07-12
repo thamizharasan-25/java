@@ -10,7 +10,6 @@ public class str {
         }
         System.out.println(s.substring(s.length()-co,s.length()));
 
-
     }
 
 }
