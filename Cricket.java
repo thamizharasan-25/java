@@ -10,7 +10,7 @@ class fastbowler implements Bowler{
                 System.out.println("Its a short ball and bouncer!!");
         }
         public int speed(int n){
-                System.out.println("the spped of the ball is "+n+"kmph");
+                System.out.println("the speed of the ball is "+n+"kmph");
                 return 1;
         }
 }
