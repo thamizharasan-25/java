@@ -33,5 +33,6 @@ public static void main(String[] args) {
     objA.getarr();
     objB.getarr();
     A objc=new B(arr2, "tamil");
+   // objc.getarr();
 }
 }

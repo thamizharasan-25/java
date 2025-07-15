@@ -173,7 +173,72 @@ public static void print12(int n){
         space-=2;
     }
 }  
-public static void main(String[] args) {
+public static void print13(int n){
+    int k=1;
+        for (int i = 1; i <=n; i++) {
+            for (int j = 1; j <=i ; j++) {
+                System.out.print(k++ +" ");
+            }
+            System.out.println();
+        }
+    } 
+public static void print14(int n){
+        for (int i = 1; i <=n; i++) {
+            //char ch='A';
+            //for (int j=1;j<=i;j++) {
+            //System.out.print(ch++);
+            for(char ch='A';ch<'A'+i;ch++){
+                System.out.print(ch);
+            }
+            System.out.println();
+        }
+    } 
+public static void print15(int n){
+        for (int i = 0; i <n; i++) {
+            //for (int i=n;j>=n;i--) {
+                //for(char ch='A';ch<'A'+n;ch++)
+            for(char ch='A';ch<'A'+ (n-i);ch++){
+                System.out.print(ch);
+            }
+            System.out.println();
+        }
+    } 
+public static void print16(int n){
+        //char ch='A';
+        for (int i = 0; i <n; i++) {
+            char ch=(char) ('A' + i);
+            //for (int i=n;j>=n;i--) {
+                //for(char ch='A';ch<'A'+n;ch++)
+            for(int j=0;j<=i;j++){
+                System.out.print(ch);
+            }
+            System.out.println();
+           // ch++;
+        }
+    } 
+public static void print17(int n){
+        for (int i = 0; i <n; i++) {
+            //space
+            for (int j = 0; j <=n-i-1 ; j++) {
+                System.out.print(" ");
+            }
+            //char
+                char ch='A';
+                //int breakpoint=((2*i)+1)/2;
+            for (int j = 0; j <(2*i)+1; j++) {
+                System.out.print(ch);
+                //if(j<breakpoint) 
+                if(j<i) ch+=1;
+                else  ch-=1;
+            }
+            //spaces
+             for (int j = 0; j <=n-i-1 ; j++) {
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    } 
+    public static void main(String[] args) {
     int n=5;
     print1(n);
     System.out.println();
@@ -198,5 +263,15 @@ public static void main(String[] args) {
     print11(n);
     System.out.println();
     print12(n);
+    System.out.println();
+    print13(n);
+    System.out.println();
+    print14(n);
+    System.out.println();
+    print15(n);
+    System.out.println();
+    print16(n);
+    System.out.println();
+    print17(n);
 }
 }

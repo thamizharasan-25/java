@@ -17,7 +17,7 @@ public class Task2 {
         for(i=0;i<n;i++){
             arr[i]=sc.nextInt();
                 }
-                
+        sc.close();
         for(i=0;i<n-1;i++){
                 sum=((arr[i]-arr[i+1]));
                 sum=Math.abs(sum);
@@ -25,6 +25,6 @@ public class Task2 {
             
         }
         System.out.println(ans);
-        sc.close();
+       
     }
 }
