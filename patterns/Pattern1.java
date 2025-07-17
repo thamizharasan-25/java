@@ -1,6 +1,6 @@
 package patterns;
 public class Pattern1 {
- public static void print1(int n){
+public static void print1(int n){
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 System.out.print("*");
@@ -8,7 +8,7 @@ public class Pattern1 {
             System.out.println();
         }
     }
- public static void print2(int n){
+public static void print2(int n){
         for (int i = 1; i <=n; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print("*");
@@ -16,7 +16,7 @@ public class Pattern1 {
             System.out.println();
         }
     }
- public static void print3(int n){
+public static void print3(int n){
         for (int i = 1; i <=n; i++) {
             for (int j = 1; j <= i; j++) {
                 System.out.print(j);
@@ -238,7 +238,103 @@ public static void print17(int n){
             System.out.println();
         }
     } 
-    public static void main(String[] args) {
+public static void print18(int n){
+   // for (int i = 1; i <=n; i++) {  //thw commented statements also can be used for this pattern
+      for (int i = 0; i <n; i++) {  
+        // for(char ch=(char)('A'+n-i);ch<='A'+n-1;ch++){
+        for (char ch = (char)('E'-i); ch <= 'E'; ch++) { //in c++ we no need of type casting for ch
+            System.out.print(ch);
+        }
+        System.out.println();
+    }
+}
+public static void print19(int n){
+    int space=0;
+        for (int i = 0; i < n; i++) {
+            //stars
+            for (int j = 0; j < n-i; j++) {
+                System.out.print("*");
+            }
+            //spaces
+            for (int j = 0; j <space ; j++) {
+                System.out.print(" ");
+            }
+            //stars
+            for (int j = 0; j < n-i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+            space+=2;
+        }
+        space-=2;
+        for (int i = 1; i <= n; i++) {
+            //stars
+            for (int j = 0; j < i; j++) {
+                System.out.print("*");
+            }
+            //spaces
+            for (int j = 0; j <space ; j++) {
+                System.out.print(" ");
+            }
+            //stars
+            for (int j = 0; j < i; j++) {
+                System.out.print("*");
+            }
+            space-=2;
+            System.out.println();
+            
+        }
+            
+
+        
+    } 
+public static void print20(int n){
+    int space=n*2-2; 
+    for (int i = 1; i <=2*n-1; i++) {
+        int star=i>n?(2*n)-i:i;
+        //if(i>=n) star=2*n-i;
+        //star
+        for (int j = 1; j <=star ; j++) {
+            System.out.print("*");
+        }
+        //space
+        for (int j = 0; j < space; j++) {
+            System.out.print(" ");
+        }
+        //star
+        for (int j = 1; j <=star ; j++) {
+            System.out.print("*");
+        }
+        if(i>=n) space+=2;
+        else space-=2;
+        System.out.println();
+    }
+}
+public static void print21(int n){
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if(i==0 || i==n-1 || j==0 || j==n-1){
+                System.out.print("*");
+            }else System.out.print(" ");
+        }
+        System.out.println();
+    }
+}
+public static void print22(int n){
+    for (int i = 0; i < 2*n-1; i++) {
+        for (int j = 0; j <2*n-1; j++) {
+            //here we find minimum distance from the all sides and subracting it with the n value to get this pattern
+            int top=i;
+            int left=j;
+            int right=(2*n-2)-j;
+            int bottom=(2*n-2)-i;
+            
+            System.out.print(n-Math.min(Math.min(top,bottom),Math.min(left,right))+" ");
+        }
+    System.out.println();
+}
+}
+public static void main(String[] args) {
     int n=5;
     print1(n);
     System.out.println();
@@ -273,5 +369,15 @@ public static void print17(int n){
     print16(n);
     System.out.println();
     print17(n);
+    System.out.println();
+    print18(n);
+    System.out.println();
+    print19(n);
+    System.out.println();
+    print20(n);
+    System.out.println();
+    print21(n);
+    System.out.println();
+    print22(n);
 }
 }

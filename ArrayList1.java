@@ -18,6 +18,7 @@ public static void main(String[] args) {
     nums.add(15);
     nums.add(26);
     nums.add(15);
+    //it can have duplicate values
     //to print each value we cant use index values without get() so we use for each
     for (Integer n : nums) {
         System.out.println(n);
