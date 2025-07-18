@@ -22,6 +22,7 @@ public class Comparator2 {
     //instead of using Integer we can use any class
     List <cricketer> cric=new ArrayList<>();
     Comparator <cricketer> comp=(i, j)->i.getruns()<j.getruns()? 1: -1;
+    
     cric.add(new cricketer(400,"tamil"));
     cric.add(new cricketer(500,"Jeeva"));
     cric.add(new cricketer(300,"kanna"));

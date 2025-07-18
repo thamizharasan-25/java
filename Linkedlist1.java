@@ -7,7 +7,7 @@ class Node {
     }
     
 }
-public class Linkedlist {
+public class Linkedlist1{
     Node head=null;
    public void add(int data){
         Node newnode=new Node(data);
@@ -29,7 +29,6 @@ public class Linkedlist {
         }
         System.out.println();
     }
-    
-        
+        //main method in link.java
     
 }
