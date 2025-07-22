@@ -329,7 +329,7 @@ public static void print22(int n){
             int right=(2*n-2)-j;
             int bottom=(2*n-2)-i;
             
-            System.out.print(n-Math.min(Math.min(top,bottom),Math.min(left,right))+" ");
+            System.out.print( n-Math.min(Math.min(top,bottom),Math.min(left,right))+" ");
         }
     System.out.println();
 }

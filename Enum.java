@@ -13,8 +13,8 @@ public class Enum{
     public static void main(String[] args) {
         status s[]=status.values();
         
-         status ss=status.running;
-         System.out.println("IN STATUS: "+ss+" status : "+ss.getstatus());
+        status ss=status.running;
+        System.out.println("IN STATUS: "+ss+" status : "+ss.getstatus());
         // System.out.println("THE INDEX OF THE STATUS RUNNING:"+ss.ordinal());
         for (status st : s) {
             System.out.println(st+" : "+st.ordinal());
