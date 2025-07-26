@@ -1,4 +1,4 @@
-package DSA;
+
 // check the string is palindrome using recursion
 
 public class Recursion4 {

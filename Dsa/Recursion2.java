@@ -1,4 +1,3 @@
-package DSA;
 
 public class Recursion2 {
     //parametrized way

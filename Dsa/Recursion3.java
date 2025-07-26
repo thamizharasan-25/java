@@ -1,4 +1,3 @@
-package DSA;
 /// reversing the array
 public class Recursion3 {
     //two pointer recursion
@@ -34,6 +33,6 @@ public class Recursion3 {
         System.out.println("one pointer");
         RevArray2(arr1, l, n);
         for (int i : arr1) System.out.print(i+" ");
-        System.out.println();
+        System.out.println();   
     }
 }

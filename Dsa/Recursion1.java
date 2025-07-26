@@ -1,6 +1,5 @@
-package DSA;
 //print name n times
-
+package Dsa;                            
 public class Recursion1 {
     public static void recur1(int count,int n,String name ){
          
