@@ -1,4 +1,4 @@
-
+package Dsa;
 public class Recursion2 {
     //parametrized way
     public static void SumofN(int i,int sum){
