@@ -1,8 +1,8 @@
-
+package Dsa;
 import java.util.HashMap;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.TreeMap;
+// import java.util.Map;
+// import java.util.Map.Entry;
+// import java.util.TreeMap;
 
 
 public class Hashmap1{
